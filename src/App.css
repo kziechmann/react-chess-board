@@ -2,10 +2,18 @@
   height: 100vh;
   width: 100vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: linear-gradient(#e9bea1, #ff5d5d);
 }
+
+.app-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 .chess-board{
   margin: 0;
   padding: 0;
@@ -32,6 +40,16 @@
   border: 3px solid black;
   width: 100%;
   height: 100%;
+}
+
+h1 {
+  color: brown;
+  margin-right: 1em;
+  font-family: 'Cardo', serif;
+  font-size: 3em;
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: 0.1em;
 }
 
 tr:nth-child(odd) .chess-board_square:nth-child(even){
