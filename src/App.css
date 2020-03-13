@@ -1,38 +1,43 @@
-.App {
+.App{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#e9bea1, #ff5d5d);
+}
+.chess-board{
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  width: 80vh;
+  height: 80vh;
+  box-shadow: 10px 20px 20px black;
+}
+
+.chess-board_square{
+  border: 1px solid black;
+  width: 9vh;
+  height: 9vh;
+  z-index: 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.chess-board_piece{
+  width: 100%;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.chess-board_squares{
+  border: 3px solid black;
+  width: 100%;
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+tr:nth-child(odd) .chess-board_square:nth-child(even){
+  background: radial-gradient(#e67e64, #9c1f00);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+tr:nth-child(even) .chess-board_square:nth-child(odd){
+  background: radial-gradient(#e67e64, #9c1f00);
 }
