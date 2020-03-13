@@ -1,3 +1,7 @@
+React Chess
+
+![React Chess screenshot](https://github.com/kziechmann/react-chess-board/blob/master/src/images/react-chess.JPG)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
